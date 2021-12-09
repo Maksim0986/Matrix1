@@ -96,6 +96,11 @@ int test1() {
 	cout << "Максимум из всех минимальных элементов матрицы по столбцам: " << max << endl;
 	cout << " " << endl;
 
+	for (int i = 0; i < n; i++)
+	{
+		delete[] p[i];
+	}
+	delete[] p;
 
 	return 0;
 
